@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "category": "Fast Food",
+        "calories": 285,
+        "price": 8.99
+    },
+    {
+        "id": 2,
+        "name": "Sushi",
+        "category": "Japanese",
+        "calories": 200,
+        "price": 12.99
+    },
+    {
+        "id": 3,
+        "name": "Burger",
+        "category": "Fast Food",
+        "calories": 350,
+        "price": 5.99
+    },
+    {
+        "id": 4,
+        "name": "Pasta",
+        "category": "Italian",
+        "calories": 320,
+        "price": 10.49
+    },
+    {
+        "id": 5,
+        "name": "Salad",
+        "category": "Healthy",
+        "calories": 150,
+        "price": 6.99
+    },
+    {
+        "id": 6,
+        "name": "Steak",
+        "category": "Grilled",
+        "calories": 600,
+        "price": 15.99
+    },
+    {
+        "id": 7,
+        "name": "Tacos",
+        "category": "Mexican",
+        "calories": 250,
+        "price": 4.99
+    },
+    {
+        "id": 8,
+        "name": "Fried Chicken",
+        "category": "Fast Food",
+        "calories": 450,
+        "price": 7.99
+    },
+    {
+        "id": 9,
+        "name": "Soup",
+        "category": "Appetizer",
+        "calories": 180,
+        "price": 5.49
+    },
+    {
+        "id": 10,
+        "name": "Ice Cream",
+        "category": "Dessert",
+        "calories": 200,
+        "price": 3.99
+    },
+    {
+        "id": 11,
+        "name": "Pancakes",
+        "category": "Breakfast",
+        "calories": 350,
+        "price": 6.49
+    },
+    {
+        "id": 12,
+        "name": "Sandwich",
+        "category": "Snack",
+        "calories": 300,
+        "price": 5.29
+    },
+    {
+        "id": 13,
+        "name": "Cheesecake",
+        "category": "Dessert",
+        "calories": 450,
+        "price": 6.99
+    },
+    {
+        "id": 14,
+        "name": "Dumplings",
+        "category": "Asian",
+        "calories": 260,
+        "price": 8.49
+    },
+    {
+        "id": 15,
+        "name": "Hot Dog",
+        "category": "Fast Food",
+        "calories": 290,
+        "price": 4.79
+    },
+    {
+        "id": 16,
+        "name": "Rice Bowl",
+        "category": "Asian",
+        "calories": 400,
+        "price": 9.99
+    }
+]
