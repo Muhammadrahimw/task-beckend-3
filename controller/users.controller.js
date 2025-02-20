@@ -1,5 +1,5 @@
 const {read} = require("../utils/fs");
-const {signInJwt} = require("../utils/jwt");
+const {signInJwt} = require("../utils/jwt.JS");
 const {CustomError, ResData} = require("../utils/res-helpers");
 
 const signIn = (req, res, next) => {
