@@ -7,12 +7,13 @@ const {
 	deleteById,
 	put,
 } = require("../../controller/foods.controller");
+const {verifyMiddleware} = require("../../middleware/verify.middleware");
 
 const router = express.Router();
-router.get(`/foods`, getAll);
-router.get(`/foods/:id`, checkId, getById);
+router.get(`/foods`, verifyMiddleware, getAll);
+router.get(`/foods/:id`, checkId, verifyMiddleware, getById);
 router.post(`/foods`, post);
-router.delete(`/foods/:id`, checkId, deleteById);
-router.put(`/foods/:id`, checkId, put);
+router.delete(`/foods/:id`, checkId, verifyMiddleware, deleteById);
+router.put(`/foods/:id`, checkId, verifyMiddleware, put);
 
 module.exports = router;
