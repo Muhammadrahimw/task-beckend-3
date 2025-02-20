@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"name": "muhammadrahim",
+		"email": "muqalla21@gamil.com",
+		"password": "12345"
+	},
+	{
+		"id": 2,
+		"name": "robiya",
+		"email": "robiya@gamil.com",
+		"password": "12345"
+	},
+	{
+		"id": 3,
+		"name": "kimdir",
+		"email": "kimdir@gamil.com",
+		"password": "12345"
+	}
+]
