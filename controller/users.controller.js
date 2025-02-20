@@ -27,6 +27,7 @@ const getUser = (req, res, next) => {
 	try {
 		const findUser = read("users").find((user) => user.id == req.userId);
 		const resData = new ResData(200, "success", {...findUser});
+
 		res.status(resData.status).json(resData);
 		if (!findUser) {
 			throw new CustomError(404, "Email or password is wrong");

@@ -7,11 +7,10 @@ const router = require("./routes/router");
 const {verifyMiddleware} = require("./middleware/verify.middleware");
 
 dotenv.config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6060;
 
 app.use(express.json());
 app.use(cors());
-app.use(verifyMiddleware);
 
 app.use(router);
 
