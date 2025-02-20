@@ -6,27 +6,25 @@ const {ResData, CustomError} = require("./utils/res-helpers");
 const router = require("./routes/router");
 const {verifyMiddleware} = require("./middleware/verify.middleware");
 
-app.use(express.json());
-app.use(router);
-
 dotenv.config();
 const PORT = process.env.PORT || 5000;
-app.use(cors());
 
+app.use(express.json());
+app.use(cors());
 app.use(verifyMiddleware);
 
+app.use(router);
+
 app.use((req, res, next) => {
-	try {
-		throw new CustomError(404, `This ${req.url} page not found`);
-	} catch (error) {
-		next(error);
-	}
+	next(new CustomError(404, `This ${req.url} page not found`));
 });
 
 app.use((error, req, res, next) => {
+	if (res.headersSent) return next(error);
+
 	const statusCode = error.status || 500;
 	const resData = new ResData(statusCode, error.message);
-	res.status(resData.status).json(resData);
+	res.status(statusCode).json(resData);
 });
 
 app.listen(PORT, () => {
